@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="AlfiscoSkin/FrameWindow" name="Console" >
+        <Property name="Area" value="{{0,0},{0,0},{0.5,-251},{0.45,-65}}" />
+        <Property name="Text" value="Console" />
+        <Property name="Alpha" value="0.8" />
+        <Property name="MaxSize" value="{{0.8,0},{0.8,0}}" />
+        <Property name="MinSize" value="{{0.2,0},{0.2,0}}" />
+        <Property name="AlwaysOnTop" value="true" />
+        <Property name="VerticalAlignment" value="Bottom" />
+        <Property name="CloseButtonEnabled" value="false" />
+        <Window type="AlfiscoSkin/Button" name="Submit" >
+            <Property name="ID" value="1" />
+            <Property name="Area" value="{{0,-7},{0,-7},{0.25,-7},{0,23}}" />
+            <Property name="Text" value="Envoyé" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="VerticalAlignment" value="Bottom" />
+            <Property name="HorizontalAlignment" value="Right" />
+        </Window>
+        <Window type="AlfiscoSkin/Editbox" name="Editbox" >
+            <Property name="ID" value="2" />
+            <Property name="Area" value="{{0,7},{0,-7},{0.75,-14},{0,23}}" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="VerticalAlignment" value="Bottom" />
+        </Window>
+        <Window type="AlfiscoSkin/MultiLineEditbox" name="History" >
+            <Property name="ID" value="3" />
+            <Property name="Area" value="{{0,7},{0,7},{1,-7},{1,-40}}" />
+            <Property name="Text" >Xsilium Framework...
+</Property>
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            <Property name="ReadOnly" value="true" />
+        </Window>
+    </Window>
+</GUILayout>

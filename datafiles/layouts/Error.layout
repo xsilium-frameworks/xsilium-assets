@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="DefaultWindow" name="DefaultWindow" >
+        <Property name="Area" value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+        <Window type="AlfiscoSkin/FrameWindow" name="FrameWindow" >
+            <Property name="Area" value="{{0,-0.5},{0,-0.5},{0.3,-6.5},{0.3,-4.5}}" />
+            <Property name="Text" value="Message D&apos;erreur" />
+            <Property name="VerticalAlignment" value="Centre" />
+            <Property name="HorizontalAlignment" value="Centre" />
+            <Window type="AlfiscoSkin/StaticText" name="StaticText" >
+                <Property name="Area" value="{{0,0},{0,0},{0,365},{0,184}}" />
+                <Property name="Text" value="Erreur 404" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="CentreAligned" />
+                <Property name="HorzScrollPageSize" value="353" />
+                <Property name="VertScrollPageSize" value="172" />
+                <Property name="HorzScrollDocumentSize" value="68" />
+                <Property name="VertScrollDocumentSize" value="13.6796" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

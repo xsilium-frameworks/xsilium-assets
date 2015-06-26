@@ -24,7 +24,7 @@
             <Property name="MaxSize" value="{{1,0},{1,0}}" />
             <Property name="VerticalAlignment" value="Bottom" />
         </Window>
-        <Window type="AlfiscoSkin/MultiLineEditbox" name="History" >
+        <Window type="AlfiscoSkin/MultiLineEditbox" name="ListOfMessage" >
             <Property name="ID" value="3" />
             <Property name="Area" value="{{0,7},{0,7},{1,-7},{1,-40}}" />
             <Property name="Text" >Xsilium Framework...

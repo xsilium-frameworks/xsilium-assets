@@ -34,7 +34,7 @@
             </terrainPage>
         </terrainPages>
     </terrain>
-    <light name="Light#0" id="168980992" type="directional" castShadows="true">
+    <light name="Sun" id="168980992" type="directional" castShadows="true">
         <position x="-104.672" y="277.223" z="-212.24" />
         <directionVector x="0" y="-0.694658" z="0.71934" />
         <colourDiffuse r="1" g="1" b="1" a="1" />

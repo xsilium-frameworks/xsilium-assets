@@ -1,48 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <GUILayout version="4" >
-    <Window type="AlfiscoSkin/FrameWindow" name="FrameWindow" >
+    <Window type="AlfiskoSkin/FrameWindow" name="LoginWindow" >
         <Property name="Area" value="{{0,0},{0,0},{0.3,133},{0.3,112}}" />
+        <Property name="Text" value="Identification" />
         <Property name="VerticalAlignment" value="Centre" />
         <Property name="HorizontalAlignment" value="Centre" />
-        <Window type="AlfiscoSkin/StaticText" name="identificationtext" >
-            <Property name="Area" value="{{0,0},{0,0},{0,480},{0,279}}" />
-            <Property name="Text" value="Identification" />
-            <Property name="Margin" value="{top:{0,5},left:{0,0},bottom:{0,0},right:{0,0}}" />
+        <AutoWindow namePath="__auto_titlebar__" >
+            <Property name="AlwaysOnTop" value="false" />
+        </AutoWindow>
+        <Window type="AlfiskoSkin/Label" name="usernameLbl" >
+            <Property name="Area" value="{{0,-1},{0,57},{0,167},{0,98}}" />
+            <Property name="Text" value="Pseudonyme:" />
             <Property name="MaxSize" value="{{1,0},{1,0}}" />
-            <Property name="VertFormatting" value="TopAligned" />
+        </Window>
+        <Window type="AlfiskoSkin/Editbox" name="edtUsername" >
+            <Property name="Area" value="{{0,2},{0,-68},{0,342},{0,-26}}" />
             <Property name="VerticalAlignment" value="Centre" />
-            <Property name="HorzScrollPageSize" value="468" />
-            <Property name="VertScrollPageSize" value="267" />
-            <Property name="HorizontalAlignment" value="Centre" />
-            <Property name="HorzScrollDocumentSize" value="87" />
-            <Property name="VertScrollDocumentSize" value="13.6796" />
-            <Window type="AlfiscoSkin/StaticText" name="usernameLbl" >
-                <Property name="Area" value="{{0,80},{0,54},{0,460},{0,95}}" />
-                <Property name="Text" value="Pseudonyme:" />
-                <Property name="MaxSize" value="{{1,0},{1,0}}" />
-                <Property name="FrameEnabled" value="false" />
-                <Window type="AlfiscoSkin/Editbox" name="username" >
-                    <Property name="Area" value="{{0,0},{0,0},{0,256},{0,32}}" />
-                    <Property name="VerticalAlignment" value="Centre" />
-                    <Property name="HorizontalAlignment" value="Right" />
-                </Window>
-            </Window>
-            <Window type="AlfiscoSkin/StaticText" name="passwordLbl" >
-                <Property name="Area" value="{{0,80},{0,125},{0,460},{0,166}}" />
-                <Property name="Text" value="Mot de passe:" />
-                <Property name="MaxSize" value="{{1,0},{1,0}}" />
-                <Property name="FrameEnabled" value="false" />
-                <Window type="AlfiscoSkin/Editbox" name="password" >
-                    <Property name="Area" value="{{0,0},{0,0},{0,256},{0,32}}" />
-                    <Property name="VerticalAlignment" value="Centre" />
-                    <Property name="HorizontalAlignment" value="Right" />
-                </Window>
-            </Window>
-            <Window type="AlfiscoSkin/Button" name="Button" >
-                <Property name="Area" value="{{0,352},{0,215},{0,455},{0,247}}" />
-                <Property name="Text" value="Soumettre" />
-            </Window>
+            <Property name="HorizontalAlignment" value="Right" />
+        </Window>
+        <Window type="AlfiskoSkin/Label" name="passwordLbl" >
+            <Property name="Area" value="{{0,-1},{0,124},{0,167},{0,165}}" />
+            <Property name="Text" value="Mot de passe:" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+        </Window>
+        <Window type="AlfiskoSkin/Editbox" name="edtPassword" >
+            <Property name="Area" value="{{0,1},{0,-2},{0,341},{0,40}}" />
+            <Property name="VerticalAlignment" value="Centre" />
+            <Property name="HorizontalAlignment" value="Right" />
+        </Window>
+        <Window type="AlfiskoSkin/Button" name="btnConnexion" >
+            <Property name="Area" value="{{0,343},{0,198},{0,439},{0,230}}" />
+            <Property name="Text" value="Connexion" />
+        </Window>
+        <Window type="AlfiskoSkin/Button" name="btnQuitter" >
+            <Property name="Area" value="{{0,104},{0,199},{0,200},{0,231}}" />
+            <Property name="Text" value="Quitter" />
         </Window>
     </Window>
 </GUILayout>

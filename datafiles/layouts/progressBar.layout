@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <GUILayout version="4" >
-    <Window type="DefaultWindow" name="DefaultWindow" >
-        <Property name="Area" value="{{0,0},{0,0},{1,0},{1,0}}" />
-        <Property name="MaxSize" value="{{1,0},{1,0}}" />
-        <Window type="AlfiscoSkin/FrameWindow" name="FrameWindow" >
-            <Property name="Area" value="{{0,0},{0,0},{0.3,-68},{0.3,-144}}" />
+    <Window type="AlfiskoSkin/FrameWindow" name="ProgressBarWindow" >
+        <Property name="Area" value="{{0,-5},{0,23},{0.3,-63},{0.3,-75}}" />
+        <Property name="Visible" value="false" />
+        <Property name="VerticalAlignment" value="Centre" />
+        <Property name="CloseButtonEnabled" value="false" />
+        <Property name="HorizontalAlignment" value="Centre" />
+        <Property name="SizingBorderThickness" value="2" />
+        <AutoWindow namePath="__auto_titlebar__" >
+            <Property name="AlwaysOnTop" value="false" />
+        </AutoWindow>
+        <Window type="AlfiskoSkin/ProgressBar" name="ProgressBar" >
+            <Property name="Area" value="{{0,0},{0,-11},{0,298},{0,19}}" />
+            <Property name="StepSize" value="0.01" />
+            <Property name="CurrentProgress" value="0.01" />
             <Property name="VerticalAlignment" value="Centre" />
-            <Property name="CloseButtonEnabled" value="false" />
             <Property name="HorizontalAlignment" value="Centre" />
-            <Property name="SizingBorderThickness" value="2" />
-            <Window type="AlfiscoSkin/ProgressBar" name="ProgressBar" >
-                <Property name="Area" value="{{0,0},{0,0},{0,256},{0,32}}" />
-                <Property name="StepSize" value="0.01" />
-                <Property name="VerticalAlignment" value="Centre" />
-                <Property name="HorizontalAlignment" value="Centre" />
-            </Window>
+        </Window>
+        <Window type="AlfiskoSkin/Button" name="ButtonAnnuler" >
+            <Property name="Area" value="{{0,113},{0,48},{0,209},{0,80}}" />
+            <Property name="Text" value="Annuler" />
         </Window>
     </Window>
 </GUILayout>

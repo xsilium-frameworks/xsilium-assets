@@ -2,12 +2,13 @@
 
 <GUILayout version="4" >
     <Window type="AlfiskoSkin/FrameWindow" name="LoginWindow" >
-        <Property name="Area" value="{{0,0},{0,0},{0.3,133},{0.3,112}}" />
+        <Property name="Area" value="{{0,0},{0,0},{0.3,200},{0.3,112}}" />
         <Property name="Text" value="Identification" />
         <Property name="VerticalAlignment" value="Centre" />
         <Property name="HorizontalAlignment" value="Centre" />
+	 <Property name="AlwaysOnTop" value="false" />
         <AutoWindow namePath="__auto_titlebar__" >
-            <Property name="AlwaysOnTop" value="false" />
+            <Property name="AlwaysOnTop" value="true" />
         </AutoWindow>
         <Window type="AlfiskoSkin/Label" name="usernameLbl" >
             <Property name="Area" value="{{0,-1},{0,57},{0,167},{0,98}}" />
